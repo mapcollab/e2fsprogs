@@ -322,6 +322,10 @@ exit 0
 %{_libdir}/pkgconfig/ss.pc
 
 %changelog
+* Wed Sep 14 2016 Michal Gawlik <michal.gawlik@thalesgroup.com> 1.42.13-1
+- new package built with tito
+- new upstream version
+
 * Wed Jan 21 2015 Eric Sandeen <sandeen@redhat.com> 1.42.9-7
 - Don't require e2fsck for resize2fs -P (#1183492)
 
