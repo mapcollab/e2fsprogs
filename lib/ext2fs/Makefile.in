@@ -222,6 +222,10 @@ BSDLIB_INSTALL_DIR = $(root_libdir)
 
 all:: ext2fs.pc
 
+ifdef PPC_NO_ALTIVEC
+ALL_CFLAGS += -mno-altivec -mno-vsx
+endif 
+
 .c.o:
 	$(E) "	CC $<"
 	$(Q) $(CC) $(ALL_CFLAGS) -c $< -o $@
